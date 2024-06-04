@@ -332,3 +332,89 @@ form.search input[type=search] {
   letter-spacing: -1px;
   padding-top: 30px;
 }
+
+/* 책 갤러리 */
+#bookWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+
+.pt-st {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1077px;
+}
+
+.book-photo {
+  flex-basis: 657px;
+}
+
+.book-photo-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 657px;
+}
+
+.book-photo-bg {
+  background-color: rgb(223, 176, 114);
+  width: 219px;
+  height: 286px;
+}
+
+.book-photo-bg img {
+  width: 219px;
+  height: 286px;
+  opacity: 0.7;
+}
+
+.book-photo-bg img:hover {
+  width: 219px;
+  height: 286px;
+  opacity: 1;
+}
+
+/* 뉴스 리스트 */
+.book-news{
+  flex-basis: 420px;
+  height: 572px;
+  color: #1b1b1b;
+  background-color: rgb(255, 227, 190);
+}
+
+.book-news-box{
+   padding: 40px;
+}
+
+.book-news-box > h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.book-news-table, 
+.book-news-table tr, 
+.book-news-table tr td{
+  margin-top: 80px;
+  padding: 6px ;
+  border-collapse: collapse;
+  border-bottom: 1px  solid rgb(202, 171, 130);
+  width: 100%;
+}
+
+.book-news-table th{
+  font-weight: 700;
+  text-align: center;
+}
+
+.date{
+  font-size: 12px;
+}
+
+
+
