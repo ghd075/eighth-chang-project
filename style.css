@@ -416,5 +416,36 @@ form.search input[type=search] {
   font-size: 12px;
 }
 
+/* 풋터 영역 */
+footer {
+  background-color: #1b1b1b;
+  height: 300px;
+}
+
+.footer-wrap {
+  padding: 50px 0;
+  text-align: center;
+  width: 1300px;
+  height: 200px;
+}
+
+.footer-wrap > img {
+  width: 54px;
+  height: 58px;
+}
+
+.footer-adr > h4 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-adr p {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 25px;
+  color: #aeaeae;
+}
 
 
