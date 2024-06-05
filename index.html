@@ -1,264 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- icon 설정 -->
-    <link rel="icon" href="/imgs/logo.png" />
-    <!-- 공통CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- 부트스트랩 모듈 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- 폰트어썸, 구글 아이콘 디자인 -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <title>동네서점</title>
-  </head>
-  <body>
-    <div id="top">
-      <header>
-        <div class="header-wrap m-auto">
-          <div id="logoWrap">
-            <!-- 로고 -->
-            <a href="index.html">
-              <div class="logo-img f-le">
-                <img src="imgs/top_logo.png" alt="logo" />
-              </div>
-              <div class="logo-title">동네서점</div>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>LOUIS VUITTON</title>
+
+    <link rel="icon" href="https://us.louisvuitton.com/static_lvfront/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h2>LOUIS VUITTON</h2>
             </a>
-          </div>
-          <!-- GNB 메뉴 -->
-          <nav class="gnb">
-            <ul id="navi">
-              <li>
-                <a href="#">신간</a>
-              </li>
-              <li>
-                <a href="#">첫번째</a>
-              </li>
-              <li>
-                <a href="#" target="_self">1일#하루</a>
-              </li>
-              <li>
-                <a href="#">세이노의 가르침</a>
-              </li>
-              <li>
-                <a href="#"><img src="imgs/icon_cart.png" alt="cart" /></a>
-              </li>
-            </ul>
-            <div class="search-wrap">
-              <form class="search">
-                <input
-                  type="search"
-                  id="booksearch"
-                  name="booksearch"
-                  placeholder="책 제목을 입력하세요"
-                />
-                <button class="search-btn" type="button">찾기</button>
-              </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item menu">
+                        <a class="nav-link" ref="#" tabindex="-1">NEW</a>
+                    </li>
+                    <li class="nav-item menu">
+                        <a class="nav-link" ref="#" tabindex="-1" >WOMEN</a>
+                    </li>
+                    <li class="nav-item menu">
+                        <a class="nav-link" href="#" tabindex="-1">
+                            MEN
+                        </a>
+                    </li>
+                    <li class="nav-item menu">
+                        <a class="nav-link " href="#" tabindex="-1">ART OF LIVING</a>
+                    </li>
+                    <li class="nav-item menu">
+                        <a class="nav-link " href="#" tabindex="-1">MAGAGINE</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-          </nav>
         </div>
-      </header>
-      <main>
-        <!-- 이벤트  -->
-        <section id="banEvent">
-          <div class="m-auto ban-event-on">
-            <div class="ban-tit-wrap">
-              <h1>마음을 채우는<br />한 끼<br />도서출판 동네서점</h1>
-              <p>
-                반복되는 일상에 지친 당신에게 새로운 에너지를 공급하는 책을
-                만들겠습니다. 정성껏 준비한 한 끼로 독자 여러분의 마음을
-                든든하게 채워 드립니다.
-              </p>
-              <div class="event-btn">
-                <a href="#">
-                  <div class="btn-more">+ 더보기</div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- 책밥 소개 -->
-        <section class="biz-info">
-          <div class="m-auto biz-text-wrap">
-            <h2>'동네서점'으로 맛있게 읽는 즐거움을 느껴보세요!</h2>
-            <p>
-              반복되는 일상에 지친 당신에게 새로운 에너지를 공급하는 책을
-              만들겠습니다. 정성껏 준비한 한 끼로 독자 여러분의 마음을 든든하게
-              채워 드립니다. 동네서점의 출간 도서 목록입니다. 앞으로 다양한 책이
-              출간될 예정입니다. 많은 기대 부탁드립니다. 밥 없이 잘살아갈 수
-              있는 사람은 없습니다. ‘책은 밥이다’라는 생각, 동네서점은 독자에게
-              주식(主食)이 될 수 있는 도서를 제공하겠습니다.
-            </p>
-          </div>
-          <div class="m-auto biz-3column">
-            <div class="biz-3column-detail">
-              <img src="imgs/icon1.png" alt="아이콘" />
-              <h3>방구석 혼술 라이프</h3>
-              <p>
-                '동네서점'으로 맛있게 읽는 즐거움을 느껴보세요! 정성껏 준비한 한
-                끼로 독자 여러분의 마음을 든든하게 채워 드립니다. 앞으로 다양한
-                책이 출간될 예정입니다.
-              </p>
-            </div>
-            <div class="biz-3column-detail">
-              <img src="imgs/icon2.png" alt="아이콘" />
-              <h3>보통날의 채식 도시락</h3>
-              <p>
-                '동네서점'으로 맛있게 읽는 즐거움을 느껴보세요! 정성껏 준비한 한
-                끼로 독자 여러분의 마음을 든든하게 채워 드립니다. 앞으로 다양한
-                책이 출간될 예정입니다.
-              </p>
-            </div>
-            <div class="biz-3column-detail">
-              <img src="imgs/icon3.png" alt="아이콘" />
-              <h3>위로는 필요하니깐</h3>
-              <p>
-                '동네서점'으로 맛있게 읽는 즐거움을 느껴보세요! 정성껏 준비한 한
-                끼로 독자 여러분의 마음을 든든하게 채워 드립니다. 앞으로 다양한
-                책이 출간될 예정입니다.
-              </p>
-            </div>
-          </div>
-        </section>
-        <!-- 유튜브 -->
-        <section id="youtubeEvent">
-          <div class="youtube-event-bg cf">
-            <div class="m-auto movie-story-wrap">
-              <div class="f-le movie-youtube">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/0BgGwiIAo_c?si=osdDdK1-DBEk6VVl"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="f-ri movie-our-story">
-                <h3>베스트 셀러 제공</h3>
-                <p>
-                  정성껏 준비한 한 끼로 독자 여러분의 마음을 든든하게 채워
-                  드립니다.동네서점의 출간 도서 목록입니다. 앞으로 다양한 책이
-                  출간될 예정입니다. 밥 없이 잘살아갈 수 있는 사람은 없습니다.
-                  ‘책은 밥이다’라는 생각, 동네서점은 독자에게 주식(主食)이 될 수
-                  있는 도서를 제공하겠습니다.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- 책 갤러리와 뉴스 리스트 -->
-        <section id="bookWrap">
-          <div class="pt-st">
-            <!-- 책 갤러리 -->
-            <div class="book-photo">
-              <div class="book-photo-wrap">
-                <div class="book-photo-bg">
-                  <a href="#"
-                    ><img src="imgs/book_01.png" alt="book_photo"
-                  /></a>
-                </div>
-                <div class="book-photo-bg">
-                  <a href="#"
-                    ><img src="imgs/book_02.png" alt="book_photo"
-                  /></a>
-                </div>
-                <div class="book-photo-bg">
-                  <a href="#"
-                    ><img src="imgs/book_03.png" alt="book_photo"
-                  /></a>
-                </div>
-                <div class="book-photo-bg">
-                  <a href="#"
-                    ><img src="imgs/book_04.png" alt="book_photo"
-                  /></a>
-                </div>
-                <div class="book-photo-bg">
-                  <a href="#"
-                    ><img src="imgs/book_05.png" alt="book_photo"
-                  /></a>
-                </div>
-                <div class="book-photo-bg">
-                  <a href="#"
-                    ><img src="imgs/book_06.png" alt="book_photo"
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <!-- 뉴스 리스트 -->
-            <div class="book-news">
-              <div class="book-news-box">
-                <h3>
-                  최근 동네서점의 출간 도서 목록입니다. 앞으로 다양한 책이
-                  출간될 예정입니다.
-                </h3>
-                <table class="book-news-table">
-                  <thead>
-                    <tr>
-                      <th>제목</th>
-                      <th>날짜</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1일 1파스텔 그림</td>
-                      <td class="date">2024.5.12</td>
-                    </tr>
-                    <tr>
-                      <td>티라미수</td>
-                      <td class="date">2024.4.10</td>
-                    </tr>
-                    <tr>
-                      <td>한 그릇 일상채식</td>
-                      <td class="date">2024.4.20</td>
-                    </tr>
-                    <tr>
-                      <td>하루 한끼 채식</td>
-                      <td class="date">2024.5.22</td>
-                    </tr>
-                    <tr>
-                      <td>사계절 살림</td>
-                      <td class="date">2024.4.12</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="m-auto footer-wrap">
-          <img src="imgs/footer_logo.png" alt="footer_logo" />
-          <div class="footer-adr">
-            <h4>동네서점</h4>
-            <p>Copyright by ©동네서점 All rights reserved</p>
-            <p>
-              통신 사업자 160-87-00623 | 등록일자 2024-서울마포-0860 | 고객센터
-              02-6000-8800
-            </p>
-          </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
         </div>
-      </footer>
-      <div class="go-top">
-        <a href="#top"
-          ><div class="go-to-font"><i class="fas fa-chevron-up"></i></div
-        ></a>
-      </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.louisvuitton.com/images/%EB%A3%A8%EC%9D%B4-%EB%B9%84%ED%86%B5--20201208_KR_PUSH1_DI1.jpg?wid=1240"
+                    alt="..." class="first-img">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.louisvuitton.com/images/%EB%A3%A8%EC%9D%B4-%EB%B9%84%ED%86%B5--20201208__14_KR_PUSH1_DI1.jpg?wid=1240"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-  </body>
+    <div class="campagine-section text-center mt-5 mb-5" data-aos="fade-up" data-aos-duration="2000">
+        <h2>
+            JOURNEY HOME FOR THE HOLIDAYS
+        </h2>
+        <p>
+            Starring Alicia Vikander
+        </p>
+        <button type="button" class="btn btn-dark">Discover the Campagine</button>
+    </div>
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="https://www.louisvuitton.com/images/louis-vuitton--U_Holidays_2020_Push5_V2_DI1.jpg?wid=656"
+                        class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h2 class="card-text">LATEST SELECTION</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="https://www.louisvuitton.com/images/louis-vuitton--U_Holidays_2020_Push6_V2_DI1.jpg?wid=656"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-text text-center">GIFTS FOR HIM</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="https://www.louisvuitton.com/images/louis-vuitton--U_Holidays_2020_Push7_V2_DI1.jpg?wid=656"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-text text-center">GIFTS FOR HER</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="container">
+            <div class="first-line pb-5 pt-5">
+                LOUIS VUITTON
+            </div>
+            <div class="row pb-5 pt-5 second-line ">
+                <div class="flag col">
+                    <img src="https://us.louisvuitton.com/flags/us.svg" width=16 height=12 />
+                    Unitied States
+                </div>
+                <div class="col"><a href="#" ">
+                    Email Sign-Up</a></div>
+                <div class="col"> <a href="#">Contact Us</a></div>
+                <div class="col"> <a href="#">Apps</a></div>
+                <div class="col"> <a href="#">Follow Us</a></div>
+                <div class="col"> <a href="#">California Transparency</a></div>
+                <div class="col"><a href="#"> Legal Notice</a></div>
+                <div class="col"> <a href="#">Careers</a></div>
+                <div class="col"> <a href="#">Sitemap</a></div>     
+            </div>         
+            <div class=" mobile-footer">
+                Shipt to : <img src="https://us.louisvuitton.com/flags/us.svg"
+                    width=16 height=12 class="flag-img" /> Unitied States
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

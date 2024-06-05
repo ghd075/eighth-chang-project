@@ -1,451 +1,100 @@
-@charset "utf-8";
-
-/* 공통 */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 16px;
-  color: #000;
-  scroll-behavior: smooth;
-}
-
-ul li {
-  list-style: none;
-}
-
-body {
-  background-color: #fff;
-}
-
-a {
-  color: inherit!important;;
-  text-decoration: none!important;;
-}
-
-.f-le {
-  float: left;
-}
-
-.f-ri {
-  float: right;
-}
-
-.cf::after {
-  clear: both;
-  content: "";
-  display: block;
-}
-
-.m-auto {
-  margin: 0 auto;
-}
-
-.m-top {
-  margin-top: 20px;
-}
-
-.button {
-  cursor: pointer;
-  border-radius: 20px;
-}
-
-/* Top 버튼 */
-.go-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: rgba(238, 238, 238, 0.8);
-  text-align: center;
-  line-height: 10px;
-  padding-top: 15px;
-}
-
-.go-to-font {
-  font-size: 10px;
-}
-
-iframe {
-  border: none;
-}
-
-/* 상단영역 */
-
-header {
-  width: 100%;
-  height: 100px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-  line-height: 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
-.header-wrap {
-  display: flex;
-  justify-content: space-between;
-  width: 1300px;
-}
-
-/* 로고 */
-#logoWrap {
-  width: 190px;
-  height: 100px;
-}
-
-.logo-img > img {
-  height: 43px;
-  vertical-align: middle;
-  padding-right: 16px;
-}
-
-.logo-title {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-/* GNB 메뉴 */
-
 nav {
-  height: 100px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
+  padding: 2rem;
+  position:fixed;
 }
-
-.gnb {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.first-img {
+  width: 100vw;
 }
-
-#navi > li {
-  display: inline-block;
-  text-align: center;
-  line-height: 100px;
-  margin: 0 20px;;
+.btn-outline-success {
+  color: chocolate;
+  border-color: chocolate;
 }
-
-#navi > li:hover {
-  opacity: 0.5;
-  text-decoration: underline;
-  transition: 0.5s;
+.btn-outline-success:hover {
+  background-color: chocolate;
+  color: white;
+  border-color: chocolate;
 }
-
-/* 검색폼 */
-.search-wrap{
-  position: relative;
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
 }
-
-form.search input[type=search] {
-  padding: 6px 16px ;
-  font-size: 12px;
-  border:1px solid #eee;
-  background-color: #eee;
-  outline: 0px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  width: 180px;
-}
-
-.search-btn{
-  margin-left: -4px;
-  padding: 6px 12px;
-  font-size: 12px;
-  color: #fff;
-  border:1px solid #929292;
-  background-color: #929292;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  cursor: pointer;
-}
-
-/* 이벤트 */
-#banEvent { 
-  padding-top: 200px;
-  background-color: #f6f6f4;
-  height: 800px;
-}
-
-.ban-event-on {    
-  width: 1300px;
-  background-image: url(../imgs/main_book.png);
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-}
-
-.ban-tit-wrap{
-  vertical-align: middle;
-}
-
-.ban-tit-wrap > h1 { 
-  font-size: 72px;
-  letter-spacing: -10px;
-  line-height: 100px;
-  text-align: left;
-  font-weight: 700;
-  width: 600px;  
-}
-
-.ban-tit-wrap > p {
-  font-size: 18px;
-  margin-top: 20px;
-  text-align: left;
-  font-weight: 300;
-  width: 500px; 
-}
-
-.event-btn {
-  margin-top: 20px;
-}
-
-.btn-more {
-  width: 115px;
-  height: 40px;
-  background-color: rgb(144, 19, 254);
-  color: #fff;
+footer {
+  background: #19110b;
   font-size: 14px;
+}
+.first-line {
+  color: white;
+  border-bottom: 1px solid #392d23;
+}
+.second-line a {
+  color: white;
+  text-decoration: none;
+}
+.flag {
+  color: white;
+}
+.mobile-footer {
+  border-top: 1px solid #392d23;
+  color: white;
+  text-align: center;
+  font-size: 1.125rem;
   font-weight: 300;
-  text-align: center;
-  border-radius: 20px;
-  line-height: 40px;
-}
-
-.btn-more:hover {
-  background-color: #fff;
-  border: 1px solid rgb(144, 19, 254);
-  color: rgb(144, 19, 254);
-}
-
-/* 동네서점 소개 */
-.biz-info {
-  margin: 0 auto;
-  width: 1300px;
-  height: 800px;
-}
-
-.biz-text-wrap {
-  text-align: center;
-  width: 800px;
-}
-
-.biz-text-wrap > h2 {
-  font-size: 34px;
-  font-weight: 700;
-  padding-top: 70px;
-  letter-spacing: -1px;
-}
-
-.biz-text-wrap > p {
-  letter-spacing: -2px;
-  line-height: 30px;
-  color: #000;
-  margin-top: 20px;
-  margin-bottom: 150px;
-}
-
-.biz-3column {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   align-items: center;
-  width: 1300px;
+  display: none;
+}
+@media screen and (max-width: 48rem) {
+  .second-line {
+    padding: 0 2rem;
+  }
+
+  .flag {
+    display: none;
+  }
+
+  .first-line {
+    text-align: center;
+  }
+
+  .mobile-footer {
+    display: block;
+  }
+}
+.col {
+  padding-bottom: 1rem;
+}
+.flag-img {
+  margin: 0 0.5rem;
 }
 
-.biz-3column-detail {
-  flex: 1;
-  padding: 0 30px;
-  text-align: center;
-}
-
-.biz-3column-detail:hover{
-  transform: scale(1.1);
-}
-
-.biz-3column-detail > img {
-  width: 99px;
-}
-
-.biz-3column-detail > h3 {
-  margin: 10px 0 10px 0;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.biz-3column-detail > p {
-  font-weight: 300;
-  line-height: 24px;
-}
-
-/* 유튜브 */
-#youtubeEvent {
-  height: 310px;
-}
-
-.youtube-event-bg {
-  height: 280px;
-  background-color: #f6f6f4;
-}
-
-.movie-story-wrap {
-  width: 1080px;
-}
-
-.movie-youtube {
-  margin-top: -20px;
-  box-shadow: 30px 30px 30px 10px rgba(73, 44, 34, 0.7);
-  width: 530px;
-  height: 283px;
-}
-
-.movie-our-story{
-  margin-left: 60px;
-  padding-top: 50px;
-  width: 460px;
-  height: 283px;
-}
-
-.movie-our-story > h3{
-  width: 500px;
-  font-size: 34px;
-  font-weight: 700;
-}
-
-.movie-our-story > h3::after{
-  content: '';
+.menu {
   display: inline-block;
-  width: 220px;
-  border-bottom: 4px solid #000;
-}
-
-.movie-our-story > p{
-  font-size: 16px;
+  position: relative;
+  font-family: "Nanum Gothic", sans-serif;
   font-weight: 300;
-  line-height: 25px;
-  letter-spacing: -1px;
-  padding-top: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 3px;
 }
 
-/* 책 갤러리 */
-#bookWrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 900px;
+.menu::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: rgb(231, 32, 27);
+  transition: width 0.3s ease;
 }
 
-.pt-st {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 1077px;
-}
-
-.book-photo {
-  flex-basis: 657px;
-}
-
-.book-photo-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 657px;
-}
-
-.book-photo-bg {
-  background-color: rgb(223, 176, 114);
-  width: 219px;
-  height: 286px;
-}
-
-.book-photo-bg img {
-  width: 219px;
-  height: 286px;
-  opacity: 0.7;
-}
-
-.book-photo-bg img:hover {
-  width: 219px;
-  height: 286px;
-  opacity: 1;
-}
-
-/* 뉴스 리스트 */
-.book-news{
-  flex-basis: 420px;
-  height: 572px;
-  color: #1b1b1b;
-  background-color: rgb(255, 227, 190);
-}
-
-.book-news-box{
-   padding: 40px;
-}
-
-.book-news-box > h3 {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.book-news-table, 
-.book-news-table tr, 
-.book-news-table tr td{
-  margin-top: 80px;
-  padding: 6px ;
-  border-collapse: collapse;
-  border-bottom: 1px  solid rgb(202, 171, 130);
+.menu:hover::after {
   width: 100%;
 }
 
-.book-news-table th{
-  font-weight: 700;
-  text-align: center;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu:hover::after {
+    width: 14%;
+  }
 }
-
-.date{
-  font-size: 12px;
-}
-
-/* 풋터 영역 */
-footer {
-  background-color: #1b1b1b;
-  height: 300px;
-}
-
-.footer-wrap {
-  padding: 50px 0;
-  text-align: center;
-  width: 1300px;
-  height: 200px;
-}
-
-.footer-wrap > img {
-  width: 54px;
-  height: 58px;
-}
-
-.footer-adr > h4 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.footer-adr p {
-  font-size: 12px;
-  font-weight: 100;
-  line-height: 25px;
-  color: #aeaeae;
-}
-
-
